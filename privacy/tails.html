@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<title>Using Tails for online privacy</title>
+</head>
+
+<body>
+
+<div class=header>
+<p><a href="../index.html">Chi Nul</a> &raquo; <a href="index.html">Privacy</a> &raquo; Using Tails for online privacy</p>
+</div>
+
+<div class=content>
+<h1>Using Tails for online privacy</h1>
+
+<p>This document describes how to use the <a href="https://tails.boum.org/">Tails</a>
+operating system to achieve a degree of privacy online that can be "good enough" in
+many cases. The necessary concepts to understand how Tails works and how to use it
+will be introduced as needed, with no assumptions beyond general technology skills.</p>
+
+<p>An important note here is that you <strong>should not</strong> use any of the
+services you sign up for within a Tails session from a regular OS. For example,
+if you signed up for a <a href="#email">private email address</a>, do
+<strong>not</strong> log into it from any other computer or OS.</p>
+
+<p>Tails stands for "the amnesic incognito live system", and is an operating system
+that's designed to protect your privacy while being fairly easy to use. By default,
+no data stored in a session of using the device persists between reboots, and it should
+be very hard or impossible to link the same device between sessions.</p>
+
+<p>The installation docs at
+<a href="https://tails.boum.org/install/index.en.html">https://tails.boum.org/install/index.en.html</a>
+guides you through the process of creating a live USB that Tails can be booted from.
+You can reboot your device from this USB and do work in general, or do work requiring
+higher levels of privacy.</p>
+
+<ul>
+  <li><a href="#mac">MAC address randomization</a></li>
+  <li><a href="#tor">IP address shielding with the Tor network</a></li>
+  <li><a href="#email">Create a private email address</a></li>
+  <li><a href="#git">Manage changes to documents with Git</a></li>
+  <li><a href="#persist">Persist data between sessions</a></li>
+  <li><a href="#gpg">Identification and encryption using GPG</a></li>
+  <li><a href="#ssh">Authentication for servers with SSH</a></li>
+</ul>
+
+<h2 id="mac">MAC address randomization</h2>
+
+<p>You're likely connected to the Internet via Ethernet or Wi-Fi. The interface that
+allows your device to communicate with other network equipment has a value
+identifying it called a
+<strong><a href="https://en.wikipedia.org/wiki/MAC_address">MAC address</a></strong>.
+Since this value is a stable, unique identifier for your device, it can be used to
+track you.
+
+<p>Wikipedia says:
+
+<blockquote>
+According to Edward Snowden, the US National Security Agency has a system that tracks
+the movements of everyone in a city by monitoring the MAC addresses of their
+electronic devices.
+</blockquote>
+</p>
+
+<p>Tails randomizes the MAC address each time it's booted, so your access point only sees
+a plausible but short-lived identifier before handing out an IP address so you can
+get online. The documentation at <a href="https://tails.boum.org/contribute/design/MAC_address/">https://tails.boum.org/contribute/design/MAC_address/</a>
+describes the assumptions of the design in great detail.</p>
+
+<h2 id="tor">IP address shielding with the Tor network address</h2>
+
+<p>In order for your device to connect to others on the Internet, e.g in order to
+retrieve a web page such as this one, your device needs to have an
+<strong><a href="https://en.wikipedia.org/wiki/IP_address">IP address</strong>. In a
+typical home setup, this IP address is shared between all devices connected to the
+same Wi-Fi hotspot via <a href="https://en.wikipedia.org/wiki/Network_address_translation">NAT</a>.
+</p>
+
+<p>All network devices on the route between your device and the target device (e.g web server)
+can see and record the source and destination IP address. The
+<a href="https://www.torproject.org/">Tor Project</a> uses <strong>onion routing</strong>
+to add a privacy-preserving layer on top of TCP/IP. The way this works is that the
+connections made from your device to a <a href="https://en.wikipedia.org/wiki/SOCKS#SOCKS5">SOCKS5</a>
+proxy on the local device, which then is routed through several nodes on the Tor network
+before exiting the network and being sent to the destination server.</p>
+
+<p>The end result is that any attempt to track your traffic across the Internet
+is made very difficult or impossible; it's no longer the default that all network
+devices can see everything you do.</p>
+
+<h2 id="email">Create a private email address</h2>
+
+<p>The root of many services assumptions about identity is that you have an email address.
+Creating a private email address is thus likely going to be a necessary step to get
+anything done.</p>
+
+<p>There's a list at
+<a href="https://riseup.net/en/security/resources/radical-servers">riseup.net</a>
+of email providers. I am using <a href="https://disroot.org">disroot.org</a>, which
+is working well so far, and free for a basic account.</p>
+
+<h2 id="git">Manage changes to documents with Git</h2>
+
+<p>More to come here..</p>
+
+<h2 id="persist">Persist data between sessions</h2>
+
+<p>Since a Tails session by design forgets all information when the device is rebooted,
+extra steps need to be taken in order to persist data.</p>
+
+<h2 id="gpg">Identification and encryption using GPG</h2>
+
+<p>The <a href="https://en.wikipedia.org/wiki/GNU_Privacy_Guard">GPG</a> software is
+infamously difficult to use, but despite this does allow you to encrypt a message
+that can be stored in text format and not decrypted by anyone not in possession of
+the private key, as well as signing messages that can be verified by others as coming
+from you.</p>
+
+<p>More to come here..</p>
+
+<h2 id="ssh">Authentication for servers with SSH</h2>
+
+<p>More to come here..</p>
+
+<div class=footer>
+<iframe src="../footer.html" frameborder=0 width="100%" />
+</div>
+
+</body>
+</html>
