@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/chinul
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://chirhonul.github.io
+  * I am chinul (https://keybase.io/chinul) on keybase.
+  * I have a public key with fingerprint BB82 36D1 3081 1401 7253  727F 4600 E7D2 101E A2E4
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101ca113b48699eeadf9046e596053665a4ac0e81f4c539d9cb2adcd4f2c70d1a890a",
+      "fingerprint": "bb8236d1308114017253727f4600e7d2101ea2e4",
+      "host": "keybase.io",
+      "key_id": "4600e7d2101ea2e4",
+      "kid": "0101ca113b48699eeadf9046e596053665a4ac0e81f4c539d9cb2adcd4f2c70d1a890a",
+      "uid": "635752bd26cd2ef0e47fbb3c57af4719",
+      "username": "chinul"
+    },
+    "service": {
+      "hostname": "chirhonul.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1529513889,
+  "expire_in": 157680000,
+  "prev": "c143e863736909d4f8997799649f3a6438f102466e2910b4d97575505edb4b1b",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUltsDUEYPoe6tCHuRUKTLtFEqmZ2Zmd3zgOeSNSdIEWOnd3Zc1br7OmePS1K
+3E4iHmhFpHULikpcUpekQdMQqu73PigVKqQ8eEDVNWK2iBeP5mUy/3zf93/fn7+i
+b/dARnByoP1B/6zql8Gbb1hg0dhN18ok5pgrpVCZVMi7Ll5k8oQXLrRNKSQBCKCh
+Q4gY1gilnOumRQEmXKEEKIgQRce6AbgGLWwoiJrUYLJuGia2ZEMFJtQ1CnQpV7Ls
+WIS7cdeOeUKWMU1GxIQIaBBiAFVZQaqsWpgAwFVTFl25LnMsiFEn4TOEOaYneJ7t
+iJp4hLvs/QP/n30nu+QIUlRFZqZMDFPmFuBYtRhDhqLqFlYh9YEJ7sb05Vygjagd
+SxZJa3IlUSuxDe6P1c/x99+NOgKSF7G9aJL9ChV3Hc8xnCIBiHpePBHyBbyVcZ9R
+yln4t1aY2TFTDFMwSribsJ2YFIICaXi2Lw4VmSoQaRrNlfiKuO3ysO0jFJVoQBy/
+Dy/xTcAlGHGNIBURCqgIrlGqqpQSTC2kE4w0CwIZE8JlCgHDJlXFEBSgcJNhBpnk
+xyuOOVIIC596RGgm7EhM95Iul9ZkbA6itEAwIzAyMzutfgO5D9YPDrpz3bV/FrBH
+N3/7Ahnp/f9UFqR6fU9vqapbdFCvnddo7PmW3m7ml13LPgwGnMj5VP3lczLr+7DS
+nAtTWp+Pyjk+v3lhfVbr7Y81Jwc9o+U76kYXjO+2cWJHaXlq7+NPdQ0DH5XX/PjY
+HEmhU23gfXML6Xej5+GdFxt2tI9riSQVEufxJzn1M05NSF0aswql1ssd6x4unTr5
+y5ysM5V5k1ravs4uHjr4VWLxxaYR3x7c2reseFfPm+Rq/vav15vOPDmdXfTu0bY9
+nY19Qml3Kw4MObS7wJ51+d3Zzk1Px/HZVezYhzvlUy9Mn5lZ0/a6497wXlULD446
+PW/Lj86Kqherj7ROO7/lXq2S/6HyyqspvSsD743p53q83V96dGtDv58=
+=FgQs
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/chinul
+
+==================================================================
+
